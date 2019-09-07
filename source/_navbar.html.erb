@@ -1,0 +1,23 @@
+<nav role="navigation" id="navb">
+  <div id="menuToggle">
+    <!--
+    A fake / hidden checkbox is used as click reciever,
+    so you can use the :checked selector on it.
+    -->
+    <input type="checkbox" />
+    <%= image_tag "burger-color.svg", id: "burger-nav" %>
+    <ul id="menu">
+      <li> <%= link_to 'Discover', '/' %></li>
+      <li> <%= link_to 'Experience', '/experience.html' %></li>
+      <li> <%= link_to 'Beautiful Portfolio', 'https://www.benyas.com' %></li>
+      <li> <%= link_to 'Contact', '/contact.html' %></li>
+    </ul>
+  </div>
+</nav>
+
+<% if current_page.path == 'index.html' %>
+  <script>
+    nav = document.querySelector('#navb');
+    nav.classList.add('display-none');
+  </script>
+<% end %>

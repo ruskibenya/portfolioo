@@ -1,0 +1,71 @@
+.nav{
+    float: right!important;
+    margin-right: 0;
+
+    a{
+      color: #FB3640;
+    }
+
+}
+
+.tab-content{
+  align-items: center;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.job-title{
+  font-size: 96px;
+  color: #FB3640;
+  position: relative;
+  top: -100px;
+  background-color: rgba(255, 255, 255, .75);
+}
+
+#down-arrow-circle{
+  width: 100px;
+}
+#down-arrow{
+  width: 100px;
+}
+
+.job-details{
+  margin-top: 200px;
+  height: 100vh;
+  padding-top: 200px;
+}
+
+.card-category{
+  padding: 70px 10px;
+  font-size: 32px;
+  border-radius: 3px;
+}
+
+.card-category:hover{
+  text-decoration: underline;
+}
+
+.background-ltgreen{
+  background-color:#FB3640;
+  color: #FCFCFC;
+}
+
+.background-wh{
+  background-color:#FCFCFC;
+  color: #FB3640;
+}
+
+.resume{
+  margin-top: 50px;
+  display: inline-block;
+
+  span{
+    vertical-align: middle;
+    font-size: 96px;
+    color: black;
+  }
+}
+
+.resume:hover{
+  color: black;
+}

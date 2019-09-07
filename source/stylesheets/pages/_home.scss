@@ -1,17 +1,106 @@
 #home {
-  background-color: #D23333;
-  color: white;
+  background-color: white;
+  color: rgb(20, 20, 20);
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: space-around;
   text-align: center;
-  p {
-    margin-top: 1.5em;
+  p{
+    font-family: 'Yantramanav', sans-serif;
   }
-  a {
-    color: rgba(0,0,0,0.4);
+  #bma {
     font-weight: bold;
-    font-size: 16px;
+    font-size: 96px;
+    margin-bottom: 0;
+    margin-top: 0;
+    margin-left: 80px;
+
   }
+  #sad{
+    font-size: 36px;
+  }
+  #ques{
+    color: rgba(0,0,0, .25);
+    font-size: 144px;
+    font-weight: bold;
+  }
+}
+
+#questioning{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+}
+
+.display-none{
+  visibility: hidden;
+}
+
+
+#bma:hover > #ques { visibility: visible; }
+#bma:hover ~ #questioning { opacity: 1; }
+#bma:hover ~ nav #menuToggle { visibility: visible; }
+
+#who{
+  font-family: 'Yantramanav', sans-serif;
+  font-size: 64px;
+  margin: 0px;
+  padding-bottom: 0;
+}
+
+#burger-logo{
+  width: 40px;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+.black{
+  color: black !important;
+}
+
+.second-hover{
+  font-weight: bold;
+}
+
+#green-q{
+  position: absolute;
+  right: 220px;
+  bottom: -26px;
+  font-size: 96px;
+  z-index: 1;
+  color: #A0E557;
+  -webkit-transform: rotate(-27deg);
+}
+
+#pink-q{
+  position: absolute;
+  right: 210px;
+  bottom: 100px;
+  font-size: 96px;
+  z-index: 1;
+  color: #FF06D7;
+  transform: rotate(-27deg);
+}
+
+#orange-q{
+  position: absolute;
+  right: 166px;
+  bottom: 150px;
+  font-size: 96px;
+  z-index: 1;
+  color: #FD8F31;
+  transform: rotate(-191deg);
+}
+
+#yellow-q{
+  position: absolute;
+  right: 75px;
+  bottom: 120px;
+  font-size: 96px;
+  z-index: 1;
+  color: #FCCF3F;
+  transform: rotate(-14deg);
 }

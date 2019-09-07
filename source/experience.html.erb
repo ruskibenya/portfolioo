@@ -1,0 +1,104 @@
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" data-toggle="tab" href="#webdev">Web Developer</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#pm">Product Manager</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#cm">Community Manager</a>
+  </li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+  <iframe src="https://giphy.com/embed/VL0R3odNjcLdK" width="480" height="360" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+  <div class="tab-pane container active" id="exp">
+    <div class="job-title">
+      "Experience"
+    </div>
+  </div>
+  <div class="tab-pane container" id="webdev">
+    <div class="job-title">
+      "Web Developer"
+    </div>
+    <% link_to "#wd-details" do %>
+      <%= image_tag "down-arrow.svg", id: 'down-arrow' %>
+    <% end %>
+    <div class="job-details" id="wd-details">
+      <div class="cards row">
+        <div class="card-category col-xs-12 col-md-6 background-ltgreen">
+          Le Wagon Projects
+        </div>
+        <div class="card-category col-xs-12 col-md-6 background-wh">
+          Dollar Democracy
+        </div>
+        <div class="card-category col-xs-12 col-md-6 background-wh">
+          Coding As A Teacher
+        </div>
+        <div class="card-category col-xs-12 col-md-6 background-ltgreen">
+          Battata.io
+        </div>
+      </div>
+      <% link_to '/assets/devrelCV.pdf', class: "resume" do %>
+        <%= image_tag "down-arrow-circle.svg", id: 'down-arrow-circle' %>
+        <span>Resume</span>
+      <% end %>
+    </div>
+  </div>
+  <div class="tab-pane container fade" id="pm">
+    <div class="job-title">
+      "Product Manager"
+    </div>
+    <% link_to "#pm-details" do %>
+      <%= image_tag "down-arrow.svg", id: 'down-arrow' %>
+    <% end %>
+    <div class="job-details" id="pm-details">
+      <div class="cards row">
+        <div class="card-category col-xs-12 col-md-6 background-ltgreen">
+          AMIR App
+        </div>
+        <div class="card-category col-xs-12 col-md-6 background-wh">
+          Hackathons
+        </div>
+        <div class="card-category col-xs-12 col-md-6 background-wh">
+          Product Design Sprint
+        </div>
+        <div class="card-category col-xs-12 col-md-6 background-ltgreen">
+          Team Lead
+        </div>
+      </div>
+      <% link_to '/assets/pmCV.pdf', class: "resume" do %>
+        <%= image_tag "down-arrow-circle.svg", id: 'down-arrow-circle' %>
+        <span>Resume</span>
+      <% end %>
+    </div>
+  </div>
+  <div class="tab-pane container fade" id="cm">
+    <div class="job-title">
+      "Community Manager"
+    </div>
+    <% link_to "#cm-details" do %>
+      <%= image_tag "down-arrow.svg", id: 'down-arrow' %>
+    <% end %>
+    <div class="job-details" id="cm-details">
+      <div class="cards row">
+        <div class="card-category col-xs-12 col-md-6 background-ltgreen">
+          Community Shit
+        </div>
+        <div class="card-category col-xs-12 col-md-6 background-wh">
+          More Shit
+        </div>
+        <div class="card-category col-xs-12 col-md-6 background-wh">
+          Other Shit
+        </div>
+        <div class="card-category col-xs-12 col-md-6 background-ltgreen">
+          Better Shit
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

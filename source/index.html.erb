@@ -1,15 +1,81 @@
 ---
-title: Le Wagon - Middleman
+title: Benjamin Aronov
 ---
 
 <div id="home">
   <div class="home-content">
-    <%= image_tag "logo.png", width: "200" %>
-    <p>
-      Middleman is now running!
+    <%= image_tag "burger.svg", id: "burger-logo", class: "display-none" %>
+    <p id="who" class="first-hover display-none">Who is ... </p>
+    <p id="bma">
+      Benjamin-Michael Aronov <span id="ques", class= "first-hover display-none">?</span>
     </p>
-    <p class="about">
+    <p id="sad">[search & discover]</p>
+
+    <p class="second-hover display-none" id="green-q">?</p>
+    <p class="second-hover display-none" id="pink-q">?</p>
+    <p class="second-hover display-none" id="orange-q">?</p>
+    <p class="second-hover display-none" id="yellow-q">?</p>
+    <%= image_tag 'questioning.jpeg', id: "questioning", class: "first-hover display-none"  %>
+<!--     <p class="about">
       <%= link_to "More about this template", "about.html" %>
-    </p>
+    </p> -->
   </div>
 </div>
+
+
+<script>
+  firstHoverElements = document.querySelectorAll(".first-hover");
+  secondHoverElements = document.querySelectorAll(".second-hover");
+
+  bma = document.querySelector("#bma");
+  ques = document.querySelector("#ques");
+  burger = document.querySelector("#burger-logo");
+  navb = document.querySelector("#navb");
+
+
+  bma.addEventListener("mouseover", (event) => {
+    sad = document.querySelector('#sad');
+    navb.classList.add("display-none");
+    sad.classList.toggle("display-none");
+    firstHoverElements.forEach((el) => {
+      el.classList.toggle("display-none");
+    })
+    ques.addEventListener("mouseover", (event) => {
+      event.target.classList.add('black');
+      burger.classList.remove("display-none");
+      secondHoverElements.forEach((el2)=> {
+        el2.classList.remove("display-none");
+      })
+    })
+    ques.addEventListener("mouseout", (event) => {
+      ques.classList.remove('black');
+      secondHoverElements.forEach((el2) => {
+        el2.classList.add("display-none");
+      })
+    })
+  });
+  bma.addEventListener("mouseout", (event) => {
+    sad = document.querySelector('#sad');
+    sad.classList.toggle("display-none");
+    firstHoverElements.forEach((el) => {
+      el.classList.toggle("display-none");
+    })
+  });
+
+  // burger.addEventListener("mouseover", (event) => {
+
+  // })
+
+
+  burger = document.querySelector("#burger-logo");
+  burger.addEventListener("mouseenter", (event) => {
+    navb.classList.remove("display-none");
+    burger.classList.add("display-none");
+  })
+    burger.addEventListener("mouseout", (event) => {
+    burger.classList.add("display-none");
+  })
+
+
+
+</script>
