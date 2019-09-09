@@ -1,5 +1,5 @@
 ---
-title: Benjamin Aronov - Experience
+title: Benjamin Aronov
 ---
 
 
@@ -32,27 +32,21 @@ title: Benjamin Aronov - Experience
       "Web Developer"
     </div>
     <% link_to "#wd-details" do %>
-      <%= image_tag "down-arrow.svg", id: 'down-arrow' %>
+      <%= image_tag "down-arrow.svg", id: 'down-arrow', class: "arrow bounce" %>
     <% end %>
     <div class="job-details" id="wd-details">
       <div class="cards row">
-        <div class="card-category col-xs-12 col-md-6 background-ltgreen">
-          Le Wagon Projects
-        </div>
-        <div class="card-category col-xs-12 col-md-6 background-wh">
-          Dollar Democracy
-        </div>
-        <div class="card-category col-xs-12 col-md-6 background-wh">
-          Coding As A Teacher
-        </div>
-        <div class="card-category col-xs-12 col-md-6 background-ltgreen">
-          Battata.io
-        </div>
+        <%= partial 'partials/modals/lw_projects_modal' %>
+        <%= partial 'partials/modals/dol_dem_modal' %>
+        <%= partial 'partials/modals/teacher_modal' %>
+        <%= partial 'partials/modals/battata_modal' %>
       </div>
-      <% link_to '/assets/devrelCV.pdf', class: "resume" do %>
+      <% link_to '/assets/devCV.pdf', class: "resume", target: "_blank" do %>
         <%= image_tag "down-arrow-circle.svg", id: 'down-arrow-circle' %>
         <span>Resume</span>
       <% end %>
+
+
     </div>
   </div>
   <div class="tab-pane container fade" id="pm">
@@ -60,11 +54,11 @@ title: Benjamin Aronov - Experience
       "Product Manager"
     </div>
     <% link_to "#pm-details" do %>
-      <%= image_tag "down-arrow.svg", id: 'down-arrow' %>
+      <%= image_tag "down-arrow.svg", id: 'down-arrow', class: "arrow bounce" %>
     <% end %>
     <div class="job-details" id="pm-details">
       <div class="cards row">
-        <div class="card-category col-xs-12 col-md-6 background-ltgreen">
+        <div class="card-category col-xs-12 col-md-6 background-red">
           AMIR App
         </div>
         <div class="card-category col-xs-12 col-md-6 background-wh">
@@ -73,11 +67,11 @@ title: Benjamin Aronov - Experience
         <div class="card-category col-xs-12 col-md-6 background-wh">
           Product Design Sprint
         </div>
-        <div class="card-category col-xs-12 col-md-6 background-ltgreen">
+        <div class="card-category col-xs-12 col-md-6 background-red">
           Team Lead
         </div>
       </div>
-      <% link_to '/assets/pmCV.pdf', class: "resume" do %>
+      <% link_to '/assets/pmCV.pdf', class: "resume", target: "_blank" do %>
         <%= image_tag "down-arrow-circle.svg", id: 'down-arrow-circle' %>
         <span>Resume</span>
       <% end %>
@@ -88,11 +82,11 @@ title: Benjamin Aronov - Experience
       "Community Manager"
     </div>
     <% link_to "#cm-details" do %>
-      <%= image_tag "down-arrow.svg", id: 'down-arrow' %>
+      <%= image_tag "down-arrow.svg", id: 'down-arrow', class: "arrow bounce" %>
     <% end %>
     <div class="job-details" id="cm-details">
       <div class="cards row">
-        <div class="card-category col-xs-12 col-md-6 background-ltgreen">
+        <div class="card-category col-xs-12 col-md-6 background-red">
           Community Shit
         </div>
         <div class="card-category col-xs-12 col-md-6 background-wh">
@@ -101,10 +95,14 @@ title: Benjamin Aronov - Experience
         <div class="card-category col-xs-12 col-md-6 background-wh">
           Other Shit
         </div>
-        <div class="card-category col-xs-12 col-md-6 background-ltgreen">
+        <div class="card-category col-xs-12 col-md-6 background-red">
           Better Shit
         </div>
       </div>
+      <% link_to '/assets/devrelCV.pdf', class: "resume", target: "_blank" do %>
+        <%= image_tag "down-arrow-circle.svg", id: 'down-arrow-circle' %>
+        <span>Resume</span>
+      <% end %>
     </div>
   </div>
 </div>

@@ -1,0 +1,53 @@
+
+
+<!-- Large modal -->
+<button class="card-category col-xs-12 col-md-6 background-red" data-toggle="modal" data-target=".lw-projects-modal-lg">Le Wagon Projects</button>
+
+<div class="modal fade lw-projects-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="false">
+
+
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <%= image_tag "amir.png", class: "img-responsive", alt:"..." %>
+      <div class="carousel-caption">
+        <% link_to '#', 'data-toggle': "tooltip", title:"I was lead dev and gave the product pitch!", class: "caro-capt" do %> 👉Amir App👈 <% end %>
+      </div>
+    </div>
+    <div class="item">
+      <%= image_tag "get-a-goy.png", class: "img-responsive", alt:"..." %>
+      <div class="carousel-caption">
+        <% link_to 'https://rent-a-g.herokuapp.com/#', target: "_blank", class: "caro-capt" do %> 👉Get A Goy👈 <% end %>
+      </div>
+    </div>
+     <div class="item">
+      <img class="img-responsive" src="https://i.ytimg.com/vi/b39fZt0wvRo/maxresdefault.jpg" alt="...">
+      <div class="carousel-caption">
+        👉Mr. Cocktail👈
+      </div>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div>
+    </div>
+  </div>
+</div>
+
+
+
+<script>
+  $(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();
+});
+</script>
