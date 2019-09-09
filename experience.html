@@ -6,9 +6,9 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Use the title from a page's frontmatter if it has one -->
-    <title>Benjamin Aronov - Experience</title>
+    <title>Benjamin Aronov</title>
     <link href="https://fonts.googleapis.com/css?family=Yantramanav:400,700&display=swap" rel="stylesheet">
-    <link href="stylesheets/application-73a89400.css" rel="stylesheet" />
+    <link href="stylesheets/application-2b952bc6.css" rel="stylesheet" />
     <script src="javascripts/application-3518ee3a.js"></script>
     <link href="images/blues.ico" rel="icon" type="image/ico" />
   </head>
@@ -60,34 +60,219 @@
     <div class="job-title">
       "Web Developer"
     </div>
-<a href="#wd-details">      <img src="images/down-arrow-20fe727e.svg" id="down-arrow" alt="Down arrow" />
+<a href="#wd-details">      <img src="images/down-arrow-20fe727e.svg" id="down-arrow" class="arrow bounce" alt="Down arrow" />
 </a>    <div class="job-details" id="wd-details">
       <div class="cards row">
-        <div class="card-category col-xs-12 col-md-6 background-ltgreen">
-          Le Wagon Projects
-        </div>
-        <div class="card-category col-xs-12 col-md-6 background-wh">
-          Dollar Democracy
-        </div>
-        <div class="card-category col-xs-12 col-md-6 background-wh">
-          Coding As A Teacher
-        </div>
-        <div class="card-category col-xs-12 col-md-6 background-ltgreen">
-          Battata.io
-        </div>
+        
+
+<!-- Large modal -->
+<button class="card-category col-xs-12 col-md-6 background-red" data-toggle="modal" data-target=".lw-projects-modal-lg">Le Wagon Projects</button>
+
+<div class="modal fade lw-projects-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="false">
+
+
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="images/amir-c03e1b48.png" class="img-responsive" alt="..." />
+      <div class="carousel-caption">
+        <a href="#" data-toggle="tooltip" title="I was lead dev and gave the product pitch!" class="caro-capt"> 👉Amir App👈 </a>
       </div>
-<a href="assets/devrelCV.pdf" class="resume">        <img src="images/down-arrow-circle-3acf5dfe.svg" id="down-arrow-circle" alt="Down arrow circle" />
+    </div>
+    <div class="item">
+      <img src="images/get-a-goy-32d89041.png" class="img-responsive" alt="..." />
+      <div class="carousel-caption">
+        <a href="https://rent-a-g.herokuapp.com/#" target="_blank" class="caro-capt"> 👉Get A Goy👈 </a>
+      </div>
+    </div>
+     <div class="item">
+      <img class="img-responsive" src="https://i.ytimg.com/vi/b39fZt0wvRo/maxresdefault.jpg" alt="...">
+      <div class="carousel-caption">
+        👉Mr. Cocktail👈
+      </div>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div>
+    </div>
+  </div>
+</div>
+
+
+
+<script>
+  $(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();
+});
+</script>
+
+        
+
+<!-- Large modal -->
+<button class="card-category col-xs-12 col-md-6 background-wh" data-toggle="modal" data-target=".dol-dem-modal-lg">Dollar Democracy</button>
+
+<div class="modal fade dol-dem-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="images/doldem-lp-73f582d2.png" class="img-responsive" alt="..." />
+      <div class="carousel-caption">
+        Landing Page
+      </div>
+    </div>
+    <div class="item">
+      <img src="images/doldem-home-34136b92.png" class="img-responsive" alt="..." />
+      <div class="carousel-caption">
+        Home Page
+      </div>
+    </div>
+     <div class="item">
+      <img src="images/doldem-vio-e5b61622.png" class="img-responsive" alt="..." />
+      <div class="carousel-caption">
+        Violations Page
+      </div>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div>
+    </div>
+  </div>
+</div>
+
+
+        
+
+<!-- Large modal -->
+<button class="card-category col-xs-12 col-md-6 background-wh" data-toggle="modal" data-target=".teacher-modal-lg">Coding As A Teacher</button>
+
+<div class="modal fade teacher-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+     <img class="img-responsive" src="http://placehold.it/1200x600/555/000&text=One" alt="...">
+      <div class="carousel-caption">
+        One Image
+      </div>
+    </div>
+    <div class="item">
+      <img class="img-responsive" src="http://placehold.it/1200x600/fffccc/000&text=Two" alt="...">
+      <div class="carousel-caption">
+        Another Image
+      </div>
+    </div>
+     <div class="item">
+      <img class="img-responsive" src="http://placehold.it/1200x600/fcf00c/000&text=Three" alt="...">
+      <div class="carousel-caption">
+        Another Image
+      </div>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div>
+    </div>
+  </div>
+</div>
+
+
+        
+
+<!-- Large modal -->
+<button class="card-category col-xs-12 col-md-6 background-red" data-toggle="modal" data-target=".battata-modal-lg">Battata.io</button>
+
+<div class="modal fade battata-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+     <img class="img-responsive" src="http://placehold.it/1200x600/555/000&text=One" alt="...">
+      <div class="carousel-caption">
+        One Image
+      </div>
+    </div>
+    <div class="item">
+      <img class="img-responsive" src="http://placehold.it/1200x600/fffccc/000&text=Two" alt="...">
+      <div class="carousel-caption">
+        Another Image
+      </div>
+    </div>
+     <div class="item">
+      <img class="img-responsive" src="http://placehold.it/1200x600/fcf00c/000&text=Three" alt="...">
+      <div class="carousel-caption">
+        Another Image
+      </div>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div>
+    </div>
+  </div>
+</div>
+
+
+      </div>
+<a href="assets/devCV.pdf" class="resume" target="_blank">        <img src="images/down-arrow-circle-3acf5dfe.svg" id="down-arrow-circle" alt="Down arrow circle" />
         <span>Resume</span>
-</a>    </div>
+</a>
+
+    </div>
   </div>
   <div class="tab-pane container fade" id="pm">
     <div class="job-title">
       "Product Manager"
     </div>
-<a href="#pm-details">      <img src="images/down-arrow-20fe727e.svg" id="down-arrow" alt="Down arrow" />
+<a href="#pm-details">      <img src="images/down-arrow-20fe727e.svg" id="down-arrow" class="arrow bounce" alt="Down arrow" />
 </a>    <div class="job-details" id="pm-details">
       <div class="cards row">
-        <div class="card-category col-xs-12 col-md-6 background-ltgreen">
+        <div class="card-category col-xs-12 col-md-6 background-red">
           AMIR App
         </div>
         <div class="card-category col-xs-12 col-md-6 background-wh">
@@ -96,22 +281,22 @@
         <div class="card-category col-xs-12 col-md-6 background-wh">
           Product Design Sprint
         </div>
-        <div class="card-category col-xs-12 col-md-6 background-ltgreen">
+        <div class="card-category col-xs-12 col-md-6 background-red">
           Team Lead
         </div>
       </div>
-<a href="assets/pmCV.pdf" class="resume">        <img src="images/down-arrow-circle-3acf5dfe.svg" id="down-arrow-circle" alt="Down arrow circle" />
+<a href="assets/pmCV.pdf" class="resume" target="_blank">        <img src="images/down-arrow-circle-3acf5dfe.svg" id="down-arrow-circle" alt="Down arrow circle" />
         <span>Resume</span>
 </a>    </div>
   </div>
   <div class="tab-pane container fade" id="cm">
     <div class="job-title">
-      "Community Manager"
+      "Developer Advocate"
     </div>
-<a href="#cm-details">      <img src="images/down-arrow-20fe727e.svg" id="down-arrow" alt="Down arrow" />
+<a href="#cm-details">      <img src="images/down-arrow-20fe727e.svg" id="down-arrow" class="arrow bounce" alt="Down arrow" />
 </a>    <div class="job-details" id="cm-details">
       <div class="cards row">
-        <div class="card-category col-xs-12 col-md-6 background-ltgreen">
+        <div class="card-category col-xs-12 col-md-6 background-red">
           Community Shit
         </div>
         <div class="card-category col-xs-12 col-md-6 background-wh">
@@ -120,11 +305,13 @@
         <div class="card-category col-xs-12 col-md-6 background-wh">
           Other Shit
         </div>
-        <div class="card-category col-xs-12 col-md-6 background-ltgreen">
+        <div class="card-category col-xs-12 col-md-6 background-red">
           Better Shit
         </div>
       </div>
-    </div>
+<a href="assets/devrelCV.pdf" class="resume" target="_blank">        <img src="images/down-arrow-circle-3acf5dfe.svg" id="down-arrow-circle" alt="Down arrow circle" />
+        <span>Resume</span>
+</a>    </div>
   </div>
 </div>
 
